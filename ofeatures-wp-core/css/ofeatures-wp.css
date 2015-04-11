@@ -1,0 +1,104 @@
+/*COPYRIGHT © SkyBlow Company VATIN: PL5170154130 www.it.skyblow.com, www.ofeatures.com*/
+
+/*Plugin Configuration*/
+.feature-block {
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    padding: 1px 15px 23px;
+    margin-bottom:15px;
+}
+
+.feature-block .feature-title{
+    color: #FE9F1A; 
+    font-weight: bold;
+}
+
+.feature-block > h2 > i{
+    color: #FE9F1A;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 6px;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    border: 2px solid #fe9f1a;
+    text-align: center;
+}
+
+.feature-block .code{
+    padding: 10px; 
+    font-size: 12px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.features{
+    padding-right: 20px;
+}
+
+.ok-status i{
+    font-size: 18px; 
+    color: #84e842
+}
+
+.preloader img{
+    opacity: 0.5;
+}
+
+.every-place-content{
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.every-place-content textarea{
+    width: 100%;
+}
+
+.every-place-block{
+    margin-bottom: 500px;
+}
+
+.ofeatures-form{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.ofeatures-config-title{
+    line-height: 1.2em;
+}
+
+.show-other-languages-button{
+    font-size:12px;
+    cursor:pointer;
+    color:#666;
+}
+
+.show-other-languages-button:hover{
+    color:#222;
+}
+
+/*Support Panel*/
+#ofeatures-frame{
+    border: none;  
+    position: absolute; 
+    z-index: 10; 
+    width: 100%;
+    height: 1000px; 
+    overflow-x: hidden; 
+    overflow-y: scroll;
+    left: 0px;
+    top: 0px;
+}
+
+.support-panl-preloader{
+    margin-left:20px; 
+    position:absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.support-panl-preloader img{
+    opacity:0.5;
+}
+
