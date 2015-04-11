@@ -1,4 +1,4 @@
-=== Live Chat, Click To Call, Ticket System, Feedback, Contact Form & more - oFeatures Customer Service ===
+=== Live Chat, Call Me Back, Ticket System, Feedback, Contact Form & more oFeatures Customer Service ===
 Contributors: oFeatures
 Tags: live chat, click to call, ticket system, feedback, contact form, live, chat, satisfaction, contact, customer support, client service, customer service, mobile friendly, international, multi-language
 Requires at least: 3.3.1
