@@ -24,7 +24,7 @@ After installing this plugin, a Support Panel button will be added to the left s
 * Statistics
 
 == Installation ==
-1. Install the plugin via via Wordpress.org repository or by downloading the plugin files and uploading them to the server.
+1. Install the plugin via Wordpress.org repository or by downloading the plugin files and uploading them to the server.
 2. Activate the plugin.
 3. Go to plugin configuration (Settings > Customer Service oFeatures button on the left side menu), enter oFeatures account client id and WordPress token, you can find it in your oFeatures account in Menu > Settings > Plugins.
 4. After entering the data, synchronization with your oFeatures account will occur.
