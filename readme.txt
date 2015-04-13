@@ -44,7 +44,7 @@ The feedback feature allows website visitors/viewers to leave you a rating and m
 
 * How To Use
 
-Once you are logged into the support panel you will see all your alerts- also ones related to Feedback. On the left hand side there will be a tab with Feedback requests, in which you will see all messages and ratings. Your 1-5 star score will be shown in the 1st column. In the next section you can see more details and change the status of the Feedback to “reviewed” or “not reviewed”. In details you can find Score, Feedback comment, Customer language, Date, Request id, Feedback ID and Visitor IP.  A request is automatically assigned to a user, but the assignment can be changed by clicking on the pencil icon. The time and date of when the request was sent will be shown in the time of your time zone. You can easily view the history of the request by clicking the “Request History” button. 
+Once you are logged into the support panel you will see all your alerts - also ones related to Feedback. On the left hand side there will be a tab with Feedback requests, in which you will see all messages and ratings. Your 1-5 star score will be shown in the 1st column. In the next section you can see more details and change the status of the Feedback to “reviewed” or “not reviewed”. In details you can find Score, Feedback comment, Customer language, Date, Request id, Feedback ID and Visitor IP.  A request is automatically assigned to a user, but the assignment can be changed by clicking on the pencil icon. The time and date of when the request was sent will be shown in the time of your time zone. You can easily view the history of the request by clicking the “Request History” button. 
 
 = Call Me Back =
 
