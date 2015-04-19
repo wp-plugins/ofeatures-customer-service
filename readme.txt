@@ -14,6 +14,16 @@ The secret to success in a business are satisfied customers. With our tools inte
 
 After installing this plugin, a Support Panel button will be added to the left side menu. When you click on it you can log into your oFeatures account and manage requests. In plugin configuration you can make the selected plugin appear on every page of your website. If you would like a feature to be only on one of your pages, all you need to do is paste the Shortcode directly to page content.
 
+
+= How to enhance and manage your customer service easily and efficiently with oFeatures =
+
+[youtube http://www.youtube.com/watch?v=pY-bKYAVIb8]
+
+
+= Chat in less than 5 minutes with oFeatures =
+
+[youtube http://www.youtube.com/watch?v=kLoyhfuz5Zg]
+
 = Features =
 * Multi-language support
 * Mobile friendly
@@ -30,6 +40,12 @@ By adding Live Chat to your website you will be able to chat with your customers
 
 Once you are logged into the Support Panel, on the left hand side there is a tab with Chat requests, in which you will see all chats. When you open the Support Panel, the chat dialogue box will appear with all active chats. You can talk with your visitors  in the dialogue box or assign the chat to another user. In the first column you can see the chat conversation by clicking the chat icon. In case the chat is offline, you can reply to the request and see more details. Among others, details include when it started and ended, customer e-mail, feedback satisfaction and comment, whether the chat is offline or not, language and assigned user. In the next column you will see the user assigned to the chosen chat request. The third column shows when the chat conversation started. There is an option to mark the chat conversation as ended by clicking “Mark as ended”. Lastly, you can check the duration of the chat conversation and easily view the history of the request by clicking the “Request History” button. 
 
+
+* How To Configure
+
+In “Basic Settings” of the Live Chat, enabled responsiveness makes sure that the live chat looks good on mobile as well as on desktop devices. You can decide whether the chat is active or not. If your live chat is  not active more than 3 days in a month, your account will not be charged for the given month. Display mode gives you the possibility of changing the way your Real-time Chat will be shown on your website - it can be in a button or form mode. On the bottom right hand corner, there is a preview of your chat. In “Chat Settings” you can establish your working hours in which users can chat with you. If someone tries to contact you out of the working hours, they will be shown the offline chat contact form. There is an option to upload a company logo, which will be viewed by your customer. Branding will be shown in the further conversation on the offline chat form. Style setting are available in the “Theme” tab. Choose from a list of 13 predefined themes to match the Real-time Chat to your website style. More customizing is available through the CSS editor. For customers that live internationally, changing language settings is possible. You can add an unlimited amount of language version for Live Chat. Go to the “Team” tab to determine which employee has the option of answering requests of customers/visitors. In the “About” tab you can check your monthly cost of Live Chat.
+
+
 = Support Ticket System =
 
 The Support Ticket System allows you to create, update and resolve reported customer issues.The ticket may be created by a customer or for a customer by one of the Support Team members. 
@@ -37,6 +53,10 @@ The Support Ticket System allows you to create, update and resolve reported cust
 * How To Use
 
 Once you are logged into the Support Panel on the left hand side you will see  a tab with Support Ticket System requests, in which you will see all issues. In the first column there will be your customer e-mail. Right next to it is the issue that your customer has sent to you. There are three buttons labeled “Customer”, “Subject” and “Phone”. After mousing over them you will have a preview of the details. In the next section you can reply to the issue, see more details or change the status to “opened”, “resolved” or “not resolved”. You also have the possibility of creating a  Ticket for a customer by clicking “Create Ticket”. To do this, you fill out a form with a subject, the customer’s name, phone number and e-mail (but only e-mail address is required). You will also add a message visible to the customer and choose their language from a drop down menu. You can assign the ticket to yourself, but there is also an option to leave the checkbox empty. In this case, the system will assign the ticket to the Support Team Member with the lowest load. 
+
+* How To Configure
+
+You can decide whether the feature is active or not by checking a checkbox in the “Basic Settings” tab. You can also turn the responsiveness on or off. It’s job is to make sure that Support Ticket labels and notifications look in order on every device. If your Ticketing System System is inactive for less than 3 days in a month, your account will not be charged for the given month. Display mode gives you the possibility of changing the way your Ticketing System will be shown on your website-it can be in a button or form mode. In Support Ticket System Settings there is an option to upload a company logo, which will be viewed by your customer. Branding will be shown in the further conversation. You can also decide if you would like to ask customers for name, phone number and subject. In the “Themes” tab, there is a list of 13 predefined styles that you can modify by using the CSS editor, by which matching the Ticketing System to your website layout and color is easier. You can add an unlimited amount of language version for call me back. Go to the “Team” tab to determine which employee has the option of answering requests of customers/visitors. In the “About” tab you can check your monthly cost of Ticketing System.
 
 = Feedback Button =
 
