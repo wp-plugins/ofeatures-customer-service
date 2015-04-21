@@ -3,7 +3,7 @@
   Plugin Name: Live Chat, Click To Call, Ticket System, Feedback, Contact Form & more - oFeatures Customer Service
   Plugin URI: http://ofeatures.com/plugins
   Description: A set of widgets such as Live Chat, Click to Call, Ticket System, Feedback, Contact Form and Guestbook on a mobile friendly Customer Service platform
-  Version: 1.0
+  Version: 1.1
   Author: oFeatures
   Author URI: http://ofeatures.com
   License: GPL
