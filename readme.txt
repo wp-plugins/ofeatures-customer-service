@@ -2,8 +2,8 @@
 Contributors: oFeatures
 Tags: live chat, click to call, ticket system, feedback, contact form, live, chat, satisfaction, contact, customer support, client service, customer service, mobile friendly, international, multi-language, contacting system, visitor log, call me back, issue tracking system, ticketing system,  live support, teal-time chat
 Requires at least: 3.3.1
-Tested up to: 1.0
-Stable tag: 1.0
+Tested up to: 1.1
+Stable tag: 1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -110,3 +110,5 @@ Once you are logged into the Support Panel you will see all your alerts. Here yo
 == Changelog ==
 = 1.0 =
 * First release
+= 1.1 =
+* Synchronization process - bugfix

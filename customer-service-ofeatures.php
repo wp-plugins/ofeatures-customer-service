@@ -11,7 +11,7 @@
 
 
 //Cofig 
-$plugin_name = "customer-service-ofeatures";
+$plugin_name = "ofeatures-customer-service";
 $settings_label = "oFeatures Customer Service";
 
 //Core
@@ -33,14 +33,14 @@ function customer_service_ofeatures_remove() {
     delete_ofeatures_options();
 }
 
-ofeatures_register_support_panel("customer-service-ofeatures");
+ofeatures_register_support_panel();
 
 //Configuration menu
 if (is_admin()) {
     add_action('admin_menu', 'customer_service_admin_menu');
 
     function customer_service_ofeatures_config_page(){
-        $plugin_name = "customer-service-ofeatures";
+        $plugin_name = "ofeatures-customer-service";
         ofeatures_config_page(
               "Customer Service - oFeatures"
             , "Customer Service - oFeatures"
@@ -51,7 +51,7 @@ if (is_admin()) {
     }
     
     function customer_service_admin_menu() {
-        $plugin_name = "customer-service-ofeatures";
+        $plugin_name = "ofeatures-customer-service";
         add_submenu_page('options-general.php', 'Customer Service oFeatures', 'Customer Service oFeatures'
             , 'administrator', $plugin_name 
             , "customer_service_ofeatures_config_page");
