@@ -46,7 +46,7 @@ if (is_admin()) {
             , "Customer Service - oFeatures"
             , "List of Features that you can use:"
             , "You don't have any Features added to website: '[DOMAIN]' on your oFeatures account.<br/>Please check that you have entered the correct website address by going to Menu > Websites > Settings"
-            , plugins_url() . "/$plugin_name "
+            , plugins_url() . "/$plugin_name"
             , "http://ofeatures.com");
     }
     
