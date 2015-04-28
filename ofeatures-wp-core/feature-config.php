@@ -14,6 +14,9 @@ if (!function_exists('ofeatures_config_page')){
                 <br/><br/>
                 <?php wp_nonce_field('update-options'); ?>
                 <h3 style="color:#FE9F30; font-weight:bold"><br/><?php _e("Please provide the plugin access data. You can find it in your oFeatures account in Menu > Settings > Plugins")?></h3>
+                <?php if (!get_option('ofeatures_clientid')){ ?> 
+                    <h4><?php _e("Don't Have an Account?")?> <a target="_blank" href="<?php echo $ofeatures_url ?>"><?php _e('Create oFeatures account') ?></a></h4>
+                <?php } ?>                
                 <table>
                     <tr>
                         <td><?php _e("Client id")?></td>
