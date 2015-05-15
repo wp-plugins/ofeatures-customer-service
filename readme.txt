@@ -25,13 +25,20 @@ After installing this plugin, a Support Panel button will be added to the left s
 [youtube http://www.youtube.com/watch?v=kLoyhfuz5Zg]
 
 = Features =
-* Multi-language support
-* Mobile friendly
-* Access rights control
-* Automatically assigned requests based on availability and language skills
-* Time zone support - you and your employees may work from any place in the world and use your local time
-* Set of predefined themes
-* Statistics
+* Multi-language support - You can create translations for your features to many languages. For example you may have the Chat feature on your website in English, French, Japanese and others.
+* Mobile friendly - You and your customer service team members are able to support your customers using mobile devices such as smartphones or tablets from anywhere in the world.
+* Access rights control - You can decide whether users of your account have access to the whole system (as you do) or just to the Support Panel, so that they can help your customers.
+* Automatically assigned requests based on availability and language skills - If you have customers for example from Germany and USA, but only one of your Support Team members knows the German language, you can put this information into the system. Your customers from Germany will be automatically assigned to the German-speaking employee.
+* Time zone support - You and your employees may work from any place in the world and use your local time
+* Set of predefined themes - You can change the appearance of all features by choosing a theme from list of predefined ready-to-use themes. 
+* Statistics - Thanks the statistics you have control on your Support System. Among others, in Statistics you can find the load of your Customer Support Team members which can help you decide on employment.
+* Animations - Thanks to animations, user experience can be improved significantly.
+* Canned responses - Canned responses are ready to use messages. While writing in Chat for example, you can click on a canned response and send it to your visitor/customer without having to type anything. Examples: Hello, how can I help you?, Thank you for contacting our Customer Support. Have a great day!
+* Sound notifications 
+* Requests history - In the support panel you can browse all past requests from your customers and the history of the selected request.
+* Branding - You can adjust the mailing content and set your company logo for selected features.
+* Style customization - If you want to have a customized style for a feature you can do that by using the convenient CSS editor with syntax highlighting and live (instant) preview.
+* Built-in video tutorials - Once you login to the system you will have access to video tutorials on how to use oFeatures so the usage and learning process is very easy.
 
 = Live Chat =
 By adding Live Chat to your website you will be able to chat with your customers in real-time. Even if you are offline, visitors/customers can contact you through offline chat contact form. Customers may also send the chat conversation transcript to their e-mail. Once the chat is finished, they can send a rating and message with their opinion of how they liked the chat conversation.
@@ -91,6 +98,12 @@ Contact Form is a valuable way for customers to get in touch with you. After the
 
 Once you are logged into the Support Panel you will see all your alerts. Here you can click on the “Go to” button to go the request. On the left hand side there will also be a tab with Contact Form requests, in which you will see all inquiries and requests. In the first column will be your customer’s e-mail. Right next to it is the message that your customer has sent to you. There are two buttons labeled “subject and customer”. After mousing over them you will have a preview of the details. In the next section you can reply to the request, see more details or change the status to “new”, “answered” or “not answered”. 
 
+* How To Configure
+
+In Contact Form settings there is an option to upload a company logo, which will be viewed by your customer in the further conversations. You can also decide if you would like to ask customers for their name, phone number and/or subject. 
+In “Basic Settings” tab, among others, you can enable responsiveness to  make sure that the contact form labels and notifications look in order regardless of the device type. If your Contact Form is inactive for less than 3 days in a month, your account will not be charged for the given month. You can decide whether the feature is active or not by using an “Active” checkbox. 
+In the “Theme” tab you can choose from a list of predefined themes, from light to dark colors. Adjust the theme to match your website style. You can further edit it using the CSS editor, but this is not required. Fully edit labels and notifications in “Languages” tab. You can add an unlimited amount of language version for Contact Form. Go to the “Team” tab to determine which employee has the option of answering requests of visitors. In the “About” tab you can check your monthly cost of Contact Form and change the pricing plan from standard, if the current one is little. 
+
 
 == Installation ==
 1. Install the plugin via Wordpress.org repository or by downloading the plugin files and uploading them to the server.
@@ -101,11 +114,16 @@ Once you are logged into the Support Panel you will see all your alerts. Here yo
 6. On the left side menu you can find a Support Panel button, which lets you log into oFeatures from the WordPress admin panel.
 
 == Screenshots ==
-1. Support Ticket System - settings
-2. Support Ticket System widget - example theme
-3. Contact Form widget - example theme
-4. Support Panel - request list and active live chat conversation
-5. Publishing - Shortcodes
+1. Support Panel - Request list and active live chat conversation
+2. Statistics - Dashboard
+3. Statistics - Customer Feedback chart
+4. Statistics - Customer Feedback summary
+5. Quick search - Thanks to “Quick Search” you have the option of searching requests from clients in a convenient way
+6. Quick search - Advanced mode
+7. Support Ticket System - Settings
+8. Contact Form widget - Example theme
+9. Support Ticket System widget - Example theme
+10. Publishing - Shortcodes
 
 == Changelog ==
 = 1.0 =
