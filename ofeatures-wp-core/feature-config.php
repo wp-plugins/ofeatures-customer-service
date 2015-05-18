@@ -8,15 +8,22 @@ if (!function_exists('ofeatures_config_page')){
         , $ofeatures_configuration_no_features_info
         , $plugin_path
         , $ofeatures_url) { ?>
+        
+        <br/><br/>
+        <img style="width:64px; margin-left:10px;" alt="" src="<?php echo $plugin_path;?>/ofeatures-wp-core/img/ofeatures-logo-128px128px.png" />
         <form  class="ofeatures-form" autocomplete="off" method="post" action="options.php">
             <div>
                 <h1 class="ofeatures-config-title"><?php echo $ofeatures_configuration_title;?>  
-                <br/><br/>
+                <br/>
                 <?php wp_nonce_field('update-options'); ?>
-                <h3 style="color:#444; font-weight:bold"><br/><?php _e("Please provide the plugin access data. You can find it in your oFeatures account in Menu > Settings > Plugins")?></h3>
+                <h3 class="details-request" style=""><?php _e("Please provide the plugin access data. You can find it in your oFeatures account in Menu > Settings > Plugins")?>
                 <?php if (!get_option('ofeatures_clientid')){ ?> 
-                    <h4><?php _e("Don't Have an Account?")?> <a target="_blank" href="<?php echo $ofeatures_url ?>"><?php _e('Create oFeatures account') ?></a></h4>
-                <?php } ?>                
+                    <br/><br/>
+                    <span class="no-account-question"><?php _e("Don't Have an Account?")?> <a target="_blank" href="<?php echo $ofeatures_url ?>"><?php _e('Create oFeatures account') ?> <i class="fa fa-arrow-circle-right"></i></a></span>
+                <?php } ?>  
+                
+                </h3>
+              
                 <table>
                     <tr>
                         <td><?php _e("Client id")?></td>
