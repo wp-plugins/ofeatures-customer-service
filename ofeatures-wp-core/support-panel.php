@@ -8,7 +8,9 @@ if (!function_exists('support_panel_ofeatures_html_page')){
         global $settings_label;
 
         if (get_option('ofeatures_clientid')){ ?>
-            <h4 class="support-panl-preloader">
+            <br/><br/>
+            <img alt="" style="margin-left:20px;" src="<?php echo plugins_url() . "/".$plugin_name;?>/ofeatures-wp-core/img/ofeatures-logo-128px128px.png" /><br/>
+            <h4 class="" style="margin-left:20px;">
                 <?php _e("Loading Support Panel...")?><br/>
                 <img  alt="" src="<?php echo plugins_url() . "/".$plugin_name;?>/ofeatures-wp-core/img/preloader.gif" />
             </h4>
@@ -72,9 +74,13 @@ if (!function_exists('support_panel_ofeatures_html_page')){
             </style>
             
 <?php    } else { ?>
-            <h4 class="support-panl-preloader">
+            <br/><br/>
+            <img alt="" style="opacity:1!important" src="<?php echo plugins_url() . "/".$plugin_name;?>/ofeatures-wp-core/img/ofeatures-logo-128px128px.png" /><br/>
+            <h2>
+               
                 <?php echo (_e("Please provide the correct plugin access data in: Menu > ") . _e("Settings") . " > $settings_label"); ?><br/>
-            </h4>
+            </h2>
+          
 
 <?php   }
     }
