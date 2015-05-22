@@ -19,7 +19,7 @@ if (!function_exists('ofeatures_config_page')){
                 <h3 class="details-request" style=""><?php _e("Please provide the plugin access data. You can find it in your oFeatures account in Menu > Settings > Plugins")?>
                 <?php if (!get_option('ofeatures_clientid')){ ?> 
                     <br/><br/>
-                    <span class="no-account-question"><?php _e("Don't Have an Account?")?> <a target="_blank" href="<?php echo $ofeatures_url ?>"><?php _e('Create oFeatures account') ?> <i class="fa fa-arrow-circle-right"></i></a></span>
+                    <span class="no-account-question"><?php _e("Don't Have an Account?")?> <a target="_blank" style="cursor:pointer" href="http://ofeatures.com?utm_source=cms&utm_medium=button-main&utm_campaign=wordpress-plugin"><span style="text-decoration:underline;"><?php _e('Create oFeatures account') ?></span> <i class="fa fa-arrow-circle-right"></i></a></span>
                 <?php } ?>  
                 
                 </h3>
@@ -62,7 +62,7 @@ if (!function_exists('ofeatures_config_page')){
             <?php } ?>
             <br/>
             <h3><?php _e("Don't Have an Account?")?></h3>
-            <a class='button button-primary' target="_blank" href="<?php echo $ofeatures_url ?>"><?php _e('Create oFeatures account') ?></a>
+            <a class='button button-primary' target="_blank" href="http://ofeatures.com?utm_source=cms&utm_medium=button-below&utm_campaign=wordpress-plugin"><?php _e('Create oFeatures account') ?></a>
             <br/><br/><br/> 
             <span class="button button-default show-every-page-button" onclick="scrollToEveryPage()">Content on all pages <i class="fa fa-angle-down"></i></span>
             <div class="every-place-block" style="display:none" >
