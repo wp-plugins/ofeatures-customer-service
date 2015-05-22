@@ -127,11 +127,11 @@ In the "Theme" tab you can choose from a list of predefined themes, from light t
 
 == Frequently Asked Questions ==
 
-= What is oFeatures? =
+<h4>What is oFeatures?</h4>
 
 oFeatures is a customer service system, also called a help desk. It’s a tool thanks to which you can communicate with your customers in many different ways. Features that you can add to your website are: Live Chat (also Live support, live help), Click to Call button (also called click-to-call, click-to-talk, click-to-chat), Ticket System (also called issue tracking system, ITS, incident ticket system, request management), Feedback widget, Contact Form, Guestbook.
 
-= What features are available? =
+<h4>What features are available?</h4>
 
 You have to the option of adding the following features:
 
@@ -142,27 +142,27 @@ You have to the option of adding the following features:
 * Guestbook - an ideal solution for people who would like to find out the opinion of their customers and simultaneously and immediately share that opinion with other visitors of their website.  "A happy customer tells one friend, an unhappy customer tells everybody" - thanks to guestbook you can make that "one friend" be every person that visits your website and finds out about the high quality of your services or products. 
 * Feedback - feedback is a necessary element of every company that has a connection with their customers and strives to make their customer satisfaction to be as high as possible. Thanks to this feature you will be able to monitor customer satisfaction as well as analyze how it has changed under the influence of changes made by you in your products, services or in website content. 
 
-= Why would I choose oFeatures? - how is it different from other customer service systems? =
+<h4>Why would I choose oFeatures? - how is it different from other customer service systems?</h4>
 
 What distinguishes oFeatures from other customer service systems is that it combines many forms of communication and ensures the possibility of managing its many aspects. With oFeatures you have the possibility to not only send and receive messages from customers in many ways, but also to collect and analyze their satisfaction.
 
-= Are statistics available in oFeatures?  = 
+<h4>Are statistics available in oFeatures?</h4>
 
 Yes. In the "Statistics" panel you can access to the main panel (dashboard) where you can conveniently check the amount of requests and the current workload of your employees. Thanks to the the graph showing the load of employees, the hiring process becomes easier. Other tabs in "Statistics" are statistics connected with features. For example: for Live Chat and Feedback you can see how customer satisfaction changed in time or an average satisfaction from a certain time period. If you would like to see how a given support team member was rated by customers, all you need to do is choose them from a list. For the Support Ticket System in statistics you can see a summary of resolved tickets, new ones, and unresolved. You can also see how the amount of tickets has changed over time. For Ticket System also you can analyze applications from customers with the division of the assigned support team members. For the Contact Form, similar as in the Ticket System, you can check how the amount of requests has changed over time. When you go to the Click to Call section in "Statistics", you will see how many people asked you to call them, as well as the summarized request statuses.
 
-= Can I give my employees access to the system so that they can serve customers? = 
+<h4>Can I give my employees access to the system so that they can serve customers?</h4>
 
 Yes you have an option of adding an unlimited amount of Support Team Members. You can decide if a given employee/support team member will have access rights like you do, or just access to the support panel, where they will be able to answer to customer requests. 
 
-= I have a multilingual website. Does oFeatures support many languages? = 
+<h4>I have a multilingual website. Does oFeatures support many languages?</h4>
 
 Yes. You can add an unlimited amount of supported languages. This affects widgets that appear on your website as well as other aspects connected with customer service, such as mail correspondence. oFeatures ensures automatically assigned requests to support team members based on their language abilities. For example if you have 3 employees but only one of them knows French, then you can easily make requests from french-speaking customers automatically assign to that employee.
 
-= I often travel and change time zones and my employees are located in different parts of the world. Are my employees and I going to be able to change time zones and view requests in our local times? = 
+<h4>I often travel and change time zones and my employees are located in different parts of the world. Are my employees and I going to be able to change time zones and view requests in our local times?</h4>
 
 Yes, you can change the time zone to your current one at any time thanks to which you will avoid the need to calculate from one time zone to another.
 
-= What types of websites is oFeatures worth using for? = 
+<h4>What types of websites is oFeatures worth using for?</h4>
 
 oFeatures is a perfect solution for everyone who runs a website and cares that their visitors will have the highest satisfaction of communication and offered products or services. 
 
