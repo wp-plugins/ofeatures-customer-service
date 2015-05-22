@@ -113,20 +113,8 @@ In the "Theme" tab you can choose from a list of predefined themes, from light t
 5. You are now able to use Shortcodes by pasting to a selected page or by clicking "put this Feature on all pages".
 6. On the left side menu you can find a Support Panel button, which lets you log into oFeatures from the WordPress admin panel.
 
-== Screenshots ==
-1. Support Panel - Request list and active live chat conversation
-2. Statistics - Dashboard
-3. Statistics - Customer Feedback chart
-4. Statistics - Customer Feedback summary
-5. Quick search - Thanks to "Quick Search" you have the option of searching requests from clients in a convenient way
-6. Quick search - Advanced mode
-7. Support Ticket System - Settings
-8. Contact Form widget - Example theme
-9. Support Ticket System widget - Example theme
-10. Publishing - Shortcodes
 
 == Frequently Asked Questions ==
-
 <h4>What is oFeatures?</h4>
 
 oFeatures is a customer service system, also called a help desk. It’s a tool thanks to which you can communicate with your customers in many different ways. Features that you can add to your website are: Live Chat (also Live support, live help), Click to Call button (also called click-to-call, click-to-talk, click-to-chat), Ticket System (also called issue tracking system, ITS, incident ticket system, request management), Feedback widget, Contact Form, Guestbook.
@@ -179,6 +167,19 @@ Examples of using oFeatures.
 * Monika’s restaurant is known for acknowledgement amongst her customers. She often receives compliments about the taste of the dishes as well as the decoration of the interior. To allow potential customers to see opinions of existing ones, an ideal solution in this case is Guestbook. Visitors can leave their opinions, which will not only satisfy Monika and her team, but also will become an essential marketing tool used to encourage new customers to visit her restaurant. 
 
 * James runs an e-shop with souvenirs imported from different parts of the world. Everyday his shop is visited by about 2000 people, from which only a part of make a purchase. James is wondering what to change in his website, as well as in customer service, to increase the amount of customers who make a purchase. To find out how customer satisfaction is, and to see what changes customers expect, an ideal solution would be Feedback. After adding a Feedback feature to the website, customers will have the possibility to not only rate the shop from scale of 1-5, but also to leave a message about what they expect. Thanks to statistics, James will have an option to keep track of how customer satisfaction changes under the influence of changes made on the website and the product range, which he makes available. 
+
+
+== Screenshots ==
+1. Support Panel - Request list and active live chat conversation
+2. Statistics - Dashboard
+3. Statistics - Customer Feedback chart
+4. Statistics - Customer Feedback summary
+5. Quick search - Thanks to "Quick Search" you have the option of searching requests from clients in a convenient way
+6. Quick search - Advanced mode
+7. Support Ticket System - Settings
+8. Contact Form widget - Example theme
+9. Support Ticket System widget - Example theme
+10. Publishing - Shortcodes
 
 == Changelog ==
 = 1.0 =
