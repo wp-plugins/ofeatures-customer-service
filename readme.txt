@@ -2,7 +2,7 @@
 Contributors: oFeatures
 Tags: CFM, CFO , Customer feedback management, ITS, call me back, chat , chat live, chat service, chat software, chat support, chat support system, chat system, click to call, click to call button, click-to-call, click-to-chat, click-to-talk, click-to-text, client service, communication, contact, contact form, contacting system, customer communication, customer feedback, customer feedback system, customer feedback tool, customer log, customer satisfaction, customer service, customer service chat, customer service management, customer service manager, customer support, customer support system, feedback, guest book, guestbook, help desk, helpdesk, incident ticket system, integrate, integration, international, issue management, issue tracking, issue tracking system, live, live chat, live chat feature, live chat integration, live chat service, live chat support, live chat support system, live chat system, live help, live support, mobile friendly, multi-language, online chat, online help desk, online support ticket system, real time chat, request management, satisfaction, simple ticketing system, software helpdesk, support chat, support system, support ticket, ticket system, ticket tracking, ticketing system, trouble ticket system, trouble ticketing, visitor log
 Requires at least: 3.3.1
-Tested up to: 1.1
+Tested up to: 4.2.2
 Stable tag: 1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
