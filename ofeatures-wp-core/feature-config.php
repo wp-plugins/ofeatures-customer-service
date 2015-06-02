@@ -45,7 +45,10 @@ if (!function_exists('ofeatures_config_page')){
             </div>
             <h4 class="ok-status" style="display:none">
                 <span class="text">
-                   <?php _e(" All features have been synchronized")?> <i class="fa fa-check-circle"></i>
+                   <?php _e(" All features have been synchronized.")?> <i class="fa fa-check-circle"></i>  
+                   <span onclick="location.reload()" style="font-size:10px; font-weight: normal; text-decoration: underline; color:#777; cursor:pointer; margin-left:10px"><?php _e('synchronize again') ?></span>
+                   <br/><b>
+                    <?php _e("Every time you change something in your features (for example, the style) please visit this configuration page again to keep your features updated.")?> </b>
                     <br/><br/> 
                     <h3><?php echo $ofeatures_configuration_features_title;?></h3>
                 </span>
@@ -73,8 +76,14 @@ if (!function_exists('ofeatures_config_page')){
                     <input type="submit" class='button button-default' value="<?php _e('Save') ?>" />
                 </div>
             </div>
+            <br/><br/>
+            <br/><br/>
+            <?php echo (_e("You can contact us at any time to get support, leave feedback, request feature or functionality:")) ?><br/><br/>
+            - <?php echo (_e("Via Skype")) ?>: <a href="skype:ofeatures.support?add">ofeatures.support</a><br/>
+            - <?php echo (_e("On our website")) ?>: <a target="_blank" href="http://ofeatures.com">ofeatures.com</a>  
         </form>
-        <br/>
+
+        
         <?php
     }
 }

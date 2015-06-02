@@ -10,7 +10,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 A set of widgets such as Live Chat, Click to Call, Ticket System, Feedback, Contact Form and Guestbook on a mobile friendly Customer Service platform
 
 == Description ==
-The secret to success in a business are satisfied customers. With our tools integrated into one platform you will be able to manage your Customer Service easily and efficiently. There are many predefined styles, that you can edit as well, to match your website theme. With this plugin you can login to the Support Panel directly from the WordPress admin panel. It also lets you publish features on your website in a more convenient way.
+The secret to success in a business are satisfied customers. With our tools integrated into one platform you will be able to manage your Customer Service easily and efficiently. With this plugin you can login to the Support Panel directly from the WordPress admin panel. It also lets you publish features on your website in a more convenient way.
+
+= You can contact us at any time to get support, leave feedback, request feature or functionality: =
+* Via Skype: ofeatures.support
+* On our website: www.ofeatures.com
 
 After installing this plugin, a Support Panel button will be added to the left side menu. When you click on it you can log into your oFeatures account and manage requests. In plugin configuration you can make the selected feature appear on every page of your website. If you would like a feature to be only on one of your pages, all you need to do is paste the Shortcode directly to page content.
 
