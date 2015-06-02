@@ -77,9 +77,18 @@ if (!function_exists('support_panel_ofeatures_html_page')){
             <br/><br/>
             <img alt="" style="opacity:1!important" src="<?php echo plugins_url() . "/".$plugin_name;?>/ofeatures-wp-core/img/ofeatures-logo-128px128px.png" /><br/>
             <h2>
-               
-                <?php echo (_e("Please provide the correct plugin access data in: Menu > ") . _e("Settings") . " > $settings_label"); ?><br/>
+                <?php echo (_e("Please provide the correct plugin access data in: ") . "<a href='options-general.php?page=ofeatures-customer-service'>Settings &gt; $settings_label</a>") ?><br/>
+                
             </h2>
+             <h3>
+                <br/>
+                <br/>
+                                
+                <?php echo (_e("You can contact us at any time to get support, leave feedback, request feature or functionality:")) ?><br/><br/>
+                - <?php echo (_e("Via Skype")) ?>: <a href="skype:ofeatures.support?add">ofeatures.support</a><br/>
+                - <?php echo (_e("On our website")) ?>: <a target="_blank" href="http://ofeatures.com">ofeatures.com</a>
+                
+            </h3>            
           
 
 <?php   }
