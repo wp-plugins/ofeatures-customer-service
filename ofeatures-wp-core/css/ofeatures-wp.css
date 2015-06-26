@@ -128,3 +128,22 @@
     opacity:0.5;
 }
 
+.excluded-page-box{
+    border-radius:7px;
+    background-color:#ff7f01;
+    border:3px solid #fff;
+    padding:5px;
+    color:#fff;
+    margin-right:7px;
+    margin-bottom:7px;
+}
+
+.excluded-page-box i{
+    color:#fff;
+    cursor:pointer;
+}
+
+.excluded-page-box i:hover{
+    color:#e00;
+}
+

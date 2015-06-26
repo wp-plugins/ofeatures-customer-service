@@ -6,8 +6,8 @@ if (!function_exists('get_ofeatures_plugins_remained')) {
     //Scripts and styles
     function add_ofeatures_scripts() {
         global $plugin_name;
-        wp_enqueue_script('ofeatures-wp', plugins_url() . "/$plugin_name/ofeatures-wp-core/js/ofeatures-wp.js", array(), '1.0.0');
-        wp_enqueue_style('ofeatures-wp', plugins_url() . "/$plugin_name/ofeatures-wp-core/css/ofeatures-wp.css", array(), '1.0.0');
+        wp_enqueue_script('ofeatures-wp', plugins_url() . "/$plugin_name/ofeatures-wp-core/js/ofeatures-wp.js", array(), '1.3.0');
+        wp_enqueue_style('ofeatures-wp', plugins_url() . "/$plugin_name/ofeatures-wp-core/css/ofeatures-wp.css", array(), '1.3.0');
         wp_enqueue_style('font-awesome', 'https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css', array(), '4.0.3');
     }
 
@@ -18,6 +18,7 @@ if (!function_exists('get_ofeatures_plugins_remained')) {
         delete_option('ofeatures_clientid');
         delete_option('ofeatures_wptoken');
         delete_option('ofeatures_footer');
+        delete_option('ofeatures_footer_excludedpages');
     }
 
     function add_ofeatures_options() {
@@ -25,6 +26,8 @@ if (!function_exists('get_ofeatures_plugins_remained')) {
         add_option("ofeatures_clientid", '', '', 'yes');
         add_option("ofeatures_wptoken", '', '', 'yes');
         add_option("ofeatures_footer", '', '', 'yes');
+        //Comma separated indices
+        add_option("ofeatures_footer_excludedpages", array(), '', 'yes');   
     }
 
     //Support panel
@@ -46,7 +49,15 @@ if (!function_exists('get_ofeatures_plugins_remained')) {
     if (!empty($ofeatures_footer)) {
 
         function ofeatures_footer() {
-            echo do_shortcode(get_option('ofeatures_footer'));
+            $excuded_page_ids = get_option('ofeatures_footer_excludedpages', '');
+            $excuded_page_ids = explode(',', $excuded_page_ids);
+            $excuded_page_ids = array_filter($excuded_page_ids);
+            
+            global $post;
+            $current_page_id = $post->ID;
+            
+            if (!in_array($current_page_id, $excuded_page_ids))
+                echo do_shortcode(get_option('ofeatures_footer'));
         }
 
         add_action('wp_footer', 'ofeatures_footer');

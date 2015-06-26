@@ -7,7 +7,16 @@ if (!function_exists('ofeatures_config_page')){
         , $ofeatures_configuration_features_title
         , $ofeatures_configuration_no_features_info
         , $plugin_path
-        , $ofeatures_url) { ?>
+        , $ofeatures_url) { 
+        
+            //Removing duplicates from ofeatures_footer_excludedpages
+            $ofeatures_footer_excludedpages = get_option('ofeatures_footer_excludedpages', '');
+            $ofeatures_footer_excludedpages = explode(',', $ofeatures_footer_excludedpages);
+            $ofeatures_footer_excludedpages = array_unique($ofeatures_footer_excludedpages);
+            $ofeatures_footer_excludedpages = array_filter($ofeatures_footer_excludedpages);
+            $ofeatures_footer_excludedpages = implode(',', $ofeatures_footer_excludedpages);
+            update_option('ofeatures_footer_excludedpages', $ofeatures_footer_excludedpages);
+        ?>
         
         <br/><br/>
         <img style="width:64px; margin-left:10px;" alt="" src="<?php echo $plugin_path;?>/ofeatures-wp-core/img/ofeatures-logo-128px128px.png" />
@@ -38,7 +47,7 @@ if (!function_exists('ofeatures_config_page')){
                     </tr>
                 </table>
                 <input type="hidden" name="action" value="update" />
-                <input type="hidden" name="page_options" value="ofeatures_clientid,ofeatures_wptoken,ofeatures_footer" />
+                <input type="hidden" name="page_options" value="ofeatures_clientid,ofeatures_wptoken,ofeatures_footer,ofeatures_footer_excludedpages" />
                 <input type="submit" class='button button-default' value="<?php _e('Save') ?>" />
                 <br/>
                 <br/>
@@ -72,7 +81,30 @@ if (!function_exists('ofeatures_config_page')){
                 <div class="every-place-content">
                     <h4 style="margin-bottom:5px;"><?php _e(" If your feature is floating paste the Shortcode in this box. Otherwise, paste the code directly to page content.")?></h4>
                     <textarea placeholder='<?php _e("To add the feature to all pages you can paste the featutre Shortcode in here.")?>' name="ofeatures_footer" id="ofeatures_footer"><?php echo get_option('ofeatures_footer'); ?></textarea>
-                    <br/>
+                    <br/><br/><?php _e('Exclude pages/posts') ?>:<br/>
+                    <textarea style="max-width:300px; max-height:50px;" class='excluded-page-ids' placeholder='<?php _e("Comma separated page/post ids")?>' name="ofeatures_footer_excludedpages" id="ofeatures_footer_excludedpages"><?php echo get_option('ofeatures_footer_excludedpages', '')?></textarea>
+                    &nbsp;&nbsp; <input type="submit" class='button button-default' value="<?php _e('Exclude') ?>" />
+                    <?php
+                        $excuded_page_ids = get_option('ofeatures_footer_excludedpages', '');
+                        $excuded_page_ids = explode(',', $excuded_page_ids);
+                        $excuded_page_ids = array_filter($excuded_page_ids);
+                        
+                        if (count($excuded_page_ids) > 0){
+                            ?>
+                                <br/>
+                                <br/>
+                                <?php _e('Excluded') ?>:<br/><br/>
+                            <?php
+                        }
+                        
+                        foreach($excuded_page_ids as $id){
+                            $title = get_the_title($id);
+                            if ($title == null)
+                                $title = "(no title or doesn't exist)";
+                            echo "<span class='excluded-page-box' excludedid='$id'>$title ($id) <i  onclick='remove_excluded($id)' class='fa fa-times'></i></span>";
+                        }
+                    ?>
+                     <br/><br/>
                     <input type="submit" class='button button-default' value="<?php _e('Save') ?>" />
                 </div>
             </div>
