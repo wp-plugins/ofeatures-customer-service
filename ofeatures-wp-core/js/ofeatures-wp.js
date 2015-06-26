@@ -83,5 +83,11 @@ function showLanguages(button, languageIndex, featureId){
     var selector = " .feature-index-" + featureId;
     jQuery(selector).fadeIn()
     jQuery(button).fadeOut()
-    
+}
+
+function remove_excluded(id){
+    jQuery("[excludedid='" + id + "']").remove()
+    var val = jQuery(".excluded-page-ids").val()
+    val = val.replace(id, '').replace(' ', '').replace(',,',',').replace(/^,/ ,'').replace(/,$/ ,'')
+    jQuery(".excluded-page-ids").val(val)
 }
