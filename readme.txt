@@ -184,6 +184,7 @@ Examples of using oFeatures.
 8. Contact Form widget - Example theme
 9. Support Ticket System widget - Example theme
 10. Publishing - Shortcodes
+11. Publishing on all pages
 
 == Changelog ==
 = 1.0 =
