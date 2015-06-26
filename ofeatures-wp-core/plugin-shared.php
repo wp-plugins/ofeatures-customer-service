@@ -27,7 +27,7 @@ if (!function_exists('get_ofeatures_plugins_remained')) {
         add_option("ofeatures_wptoken", '', '', 'yes');
         add_option("ofeatures_footer", '', '', 'yes');
         //Comma separated indices
-        add_option("ofeatures_footer_excludedpages", array(), '', 'yes');   
+        add_option("ofeatures_footer_excludedpages", '', '', 'yes');   
     }
 
     //Support panel
