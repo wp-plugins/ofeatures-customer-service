@@ -80,8 +80,10 @@ if (!function_exists('ofeatures_config_page')){
             <div class="every-place-block" style="display:none" >
                 <div class="every-place-content">
                     <h4 style="margin-bottom:5px;"><?php _e(" If your feature is floating paste the Shortcode in this box. Otherwise, paste the code directly to page content.")?></h4>
-                    <textarea placeholder='<?php _e("To add the feature to all pages you can paste the featutre Shortcode in here.")?>' name="ofeatures_footer" id="ofeatures_footer"><?php echo get_option('ofeatures_footer'); ?></textarea>
-                    <br/><br/><?php _e('Exclude pages/posts') ?>:<br/>
+                    <textarea style="margin-bottom:4px;" placeholder='<?php _e("To add the feature to all pages you can paste the featutre Shortcode in here.")?>' name="ofeatures_footer" id="ofeatures_footer"><?php echo get_option('ofeatures_footer'); ?></textarea>
+                    <br/>
+                    <input type="submit" class='button button-default' value="<?php _e('Save') ?>" /> <br/>
+                    <br/><?php _e('Exclude pages/posts') ?>:<br/>
                     <textarea style="max-width:300px; max-height:50px;" class='excluded-page-ids' placeholder='<?php _e("Comma separated page/post ids")?>' name="ofeatures_footer_excludedpages" id="ofeatures_footer_excludedpages"><?php echo get_option('ofeatures_footer_excludedpages', '')?></textarea>
                     &nbsp;&nbsp; <input type="submit" class='button button-default' value="<?php _e('Exclude') ?>" />
                     <?php
