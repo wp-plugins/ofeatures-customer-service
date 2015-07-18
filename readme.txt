@@ -21,12 +21,12 @@ After installing this plugin, a Support Panel button will be added to the left s
 
 = How to enhance and manage your customer service easily and efficiently with oFeatures =
 
-[youtube http://www.youtube.com/watch?v=pY-bKYAVIb8]
+[youtube http://www.youtube.com/watch?v=j71_3yxS1Fg]
 
 
 = Chat in less than 5 minutes with oFeatures =
 
-[youtube http://www.youtube.com/watch?v=kLoyhfuz5Zg]
+[youtube http://www.youtube.com/watch?v=CBszdc1pHs0]
 
 = Features =
 * Multi-language support - You can create translations for your features to many languages. For example you may have the Chat feature on your website in English, French, Japanese and others.
