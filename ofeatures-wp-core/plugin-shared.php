@@ -1,19 +1,21 @@
 <?php
-//COPYRIGHT © SkyBlow Company VATIN: PL5170154130 www.it.skyblow.com, www.ofeatures.com
+//COPYRIGHT Â© SkyBlow Company VATIN: PL5170154130 www.it.skyblow.com, www.ofeatures.com
 
 if (!function_exists('get_ofeatures_plugins_remained')) {
     
     //Scripts and styles
     function add_ofeatures_scripts() {
         global $plugin_name;
-        wp_enqueue_script('ofeatures-wp', plugins_url() . "/$plugin_name/ofeatures-wp-core/js/ofeatures-wp.js", array(), '1.3.0');
-        wp_enqueue_style('ofeatures-wp', plugins_url() . "/$plugin_name/ofeatures-wp-core/css/ofeatures-wp.css", array(), '1.3.0');
+        wp_enqueue_script('ofeatures-wp', plugins_url() . "/$plugin_name/ofeatures-wp-core/js/ofeatures-wp.js", array(), '1.4.0');
+        wp_enqueue_script('you-tube', "https://www.youtube.com/iframe_api", array(), '1.0.0');
+        wp_enqueue_style('ofeatures-wp', plugins_url() . "/$plugin_name/ofeatures-wp-core/css/ofeatures-wp.css", array(), '1.4.0');
         wp_enqueue_style('font-awesome', 'https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css', array(), '4.0.3');
     }
 
     add_action('admin_enqueue_scripts', 'add_ofeatures_scripts');
     
     function delete_ofeatures_options() {
+        delete_option('ofeatures_configcounter');
         delete_option('ofeatures_features');
         delete_option('ofeatures_clientid');
         delete_option('ofeatures_wptoken');
@@ -26,6 +28,7 @@ if (!function_exists('get_ofeatures_plugins_remained')) {
         add_option("ofeatures_clientid", '', '', 'yes');
         add_option("ofeatures_wptoken", '', '', 'yes');
         add_option("ofeatures_footer", '', '', 'yes');
+        add_option("ofeatures_configcounter", 0, '', 'yes');
         //Comma separated indices
         add_option("ofeatures_footer_excludedpages", '', '', 'yes');   
     }
@@ -79,6 +82,17 @@ if (!function_exists('get_ofeatures_plugins_remained')) {
     //Utils
     function get_current_domain_no_protocol() {
         return str_replace('www.', '', $_SERVER['SERVER_NAME']);
+    }
+    
+    function increase_and_get_config_counter(){
+        $config_counter = get_option('ofeatures_configcounter');
+        if (empty($config_counter)){
+            $config_counter = 0;
+        }
+        
+        $config_counter = $config_counter + 1;
+        update_option('ofeatures_configcounter', $config_counter);
+        return $config_counter;
     }
 
     //Ajax synchronize action

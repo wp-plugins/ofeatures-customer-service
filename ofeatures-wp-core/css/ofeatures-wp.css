@@ -1,4 +1,4 @@
-/*COPYRIGHT © SkyBlow Company VATIN: PL5170154130 www.it.skyblow.com, www.ofeatures.com*/
+/*COPYRIGHT ï¿½ SkyBlow Company VATIN: PL5170154130 www.it.skyblow.com, www.ofeatures.com*/
 
 /*Plugin Configuration*/
 .feature-block {
@@ -103,6 +103,44 @@
 .show-other-languages-button:hover{
     color:#222;
 }
+
+#video{
+    left:-3px;
+}
+
+.video-box {
+    z-index:20;
+    overflow: hidden!important;
+    -webkit-box-shadow: inset 0px 0px 0px 5px rgba(255,255,255,1);
+    -moz-box-shadow: inset 0px 0px 0px 5px rgba(255,255,255,1);
+    box-shadow: inset 0px 0px 0px 5px rgba(255,255,255,1);
+    display:block;
+    border-radius:10px;
+    border:3px solid #fff;
+    display:none;
+    margin-top:10px;
+}
+
+ .video-youtube{
+     font-weight: bold;
+     color:#DC2725;
+ }
+
+ .maximize-button{
+       vertical-align: 10px !important;
+ }
+ 
+ .show-video{
+    color: #ff7f01;
+    cursor: pointer;
+    font-size: 13px;
+    margin-bottom: 15px !important;
+ }
+ 
+ .show-video:hover{
+     color:#ff4f01;
+ }
+
 
 /*Support Panel*/
 #ofeatures-frame{
