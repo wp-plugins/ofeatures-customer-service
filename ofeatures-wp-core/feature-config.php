@@ -1,5 +1,5 @@
 <?php
-//COPYRIGHT © SkyBlow Company VATIN: PL5170154130 www.it.skyblow.com, www.ofeatures.com
+//COPYRIGHT Â© SkyBlow Company VATIN: PL5170154130 www.it.skyblow.com, www.ofeatures.com
 
 if (!function_exists('ofeatures_config_page')){
     function ofeatures_config_page($ofeatures_configuration_title
@@ -16,14 +16,30 @@ if (!function_exists('ofeatures_config_page')){
             $ofeatures_footer_excludedpages = array_filter($ofeatures_footer_excludedpages);
             $ofeatures_footer_excludedpages = implode(',', $ofeatures_footer_excludedpages);
             update_option('ofeatures_footer_excludedpages', $ofeatures_footer_excludedpages);
+            $config_counter = increase_and_get_config_counter();
         ?>
         
+        <script>
+            window.ofeatures_config_counter = <?php echo $config_counter ?>
+        </script>
         <br/><br/>
         <img style="width:64px; margin-left:10px;" alt="" src="<?php echo $plugin_path;?>/ofeatures-wp-core/img/ofeatures-logo-128px128px.png" />
         <form  class="ofeatures-form" autocomplete="off" method="post" action="options.php">
             <div>
                 <h1 class="ofeatures-config-title"><?php echo $ofeatures_configuration_title;?>  
                 <br/>
+                <h3 style="margin-bottom:0px; margin-top:30px;display:none" class="video-title">
+                    How to use this plugin - video guide.
+                </h3>
+                <h3 style="display:none" class="show-video" onclick="window.showYT()">
+                    Video guide about this plugin. <i class="fa fa-youtube-play"></i>
+                </h3>
+                
+                <span class="video-box" id="video-box-id" >
+                </span>     
+                <br/>
+                <span onclick="window.maximizeVideo()" style="vertical-align: 10px; display:none" class="maximize-button button button-primary">Maximize this video <i class="fa fa-expand"></i></span>
+                
                 <?php wp_nonce_field('update-options'); ?>
                 <h3 class="details-request" style=""><?php _e("Please provide the plugin access data. You can find it in your oFeatures account in Menu > Settings > Plugins")?>
                 <?php if (!get_option('ofeatures_clientid')){ ?> 

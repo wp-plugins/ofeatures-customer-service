@@ -28,6 +28,10 @@ After installing this plugin, a Support Panel button will be added to the left s
 
 [youtube http://www.youtube.com/watch?v=CBszdc1pHs0]
 
+=  How to use oFeatures WordPress plugin =
+
+[youtube http://www.youtube.com/watch?v=PZHUkdiTEF0]
+
 = Features =
 * Multi-language support - You can create translations for your features to many languages. For example you may have the Chat feature on your website in English, French, Japanese and others.
 * Mobile friendly - You and your customer service team members are able to support your customers using mobile devices such as smartphones or tablets from anywhere in the world. Respond to chat messages as well as support tickets and any other requests quickly and easily, even if you are not at your computer. 
@@ -116,6 +120,10 @@ In the "Theme" tab you can choose from a list of predefined themes, from light t
 4. After entering the data, synchronization with your oFeatures account will occur.
 5. You are now able to use Shortcodes by pasting to a selected page or by clicking "put this Feature on all pages".
 6. On the left side menu you can find a Support Panel button, which lets you log into oFeatures from the WordPress admin panel.
+
+=  How to use oFeatures WordPress plugin =
+
+[youtube http://www.youtube.com/watch?v=PZHUkdiTEF0]
 
 
 == Frequently Asked Questions ==
