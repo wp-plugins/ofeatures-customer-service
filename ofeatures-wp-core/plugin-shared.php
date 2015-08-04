@@ -99,7 +99,7 @@ if (!function_exists('get_ofeatures_plugins_remained')) {
     function synchronize_ofeatures() {
         $clientId = get_option('ofeatures_clientid');
         if (isset($clientId)) {
-            $baseUrl = "http://" . $clientId . ".panel.ofeatures.com";
+            $baseUrl = "https://" . $clientId . ".panel.ofeatures.com";
             //$plugintype = $_POST["plugintype"];
             $wpToken = get_option('ofeatures_wptoken');
             $ofeatures_features = get_option('ofeatures_features');
