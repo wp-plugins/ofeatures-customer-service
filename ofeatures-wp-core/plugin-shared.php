@@ -99,15 +99,27 @@ if (!function_exists('get_ofeatures_plugins_remained')) {
     function synchronize_ofeatures() {
         $clientId = get_option('ofeatures_clientid');
         if (isset($clientId)) {
-            $baseUrl = "https://" . $clientId . ".panel.ofeatures.com";
+            $baseUrl = "http://" . $clientId . ".panel.ofeatures.com";
             //$plugintype = $_POST["plugintype"];
             $wpToken = get_option('ofeatures_wptoken');
             $ofeatures_features = get_option('ofeatures_features');
-            $response = @file_get_contents($baseUrl . '/skyblow.clientbackend/pluginaccess/features?plugintechnology=wp'
+            $url = $baseUrl . '/skyblow.clientbackend/pluginaccess/features?plugintechnology=wp'
                 . '&websiteaddress='
                 . get_current_domain_no_protocol()
                 . '&wpToken='
-                . $wpToken);
+                . $wpToken;
+                
+            $response = @file_get_contents($url);
+               
+            if ($response === false && extension_loaded('curl') === true){
+                $ch = curl_init();
+                $timeout = 5;
+                curl_setopt($ch, CURLOPT_URL, $url);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+                $response = curl_exec($ch);
+                curl_close($ch);
+            }
 
             if ($response != "no-access-rights" && $response !== false) {
                 $result = json_decode($response, true);
