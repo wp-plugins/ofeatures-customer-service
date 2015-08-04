@@ -30,7 +30,7 @@ After installing this plugin, a Support Panel button will be added to the left s
 
 =  How to use oFeatures WordPress plugin =
 
-[youtube http://www.youtube.com/watch?v=PZHUkdiTEF0]
+[youtube http://www.youtube.com/watch?v=8uGVVhcfioM]
 
 = Features =
 * Multi-language support - You can create translations for your features to many languages. For example you may have the Chat feature on your website in English, French, Japanese and others.
@@ -123,7 +123,7 @@ In the "Theme" tab you can choose from a list of predefined themes, from light t
 
 =  How to use oFeatures WordPress plugin =
 
-[youtube http://www.youtube.com/watch?v=PZHUkdiTEF0]
+[youtube http://www.youtube.com/watch?v=8uGVVhcfioM]
 
 
 == Frequently Asked Questions ==

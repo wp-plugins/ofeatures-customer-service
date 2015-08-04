@@ -93,7 +93,7 @@ function remove_excluded(id){
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    var ytpath = 'PZHUkdiTEF0'
+    var ytpath = '8uGVVhcfioM'
     var ytratio = 9/16;
 
     function onPlayerStateChange(event) {
