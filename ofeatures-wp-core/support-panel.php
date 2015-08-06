@@ -8,7 +8,9 @@ if (!function_exists('support_panel_ofeatures_html_page')){
         global $settings_label;
 
         if (get_option('ofeatures_clientid')){ ?>
-            <h4 class="support-panl-preloader">
+            <br/><br/>
+            <img alt="" style="margin-left:20px;" src="<?php echo plugins_url() . "/".$plugin_name;?>/ofeatures-wp-core/img/ofeatures-logo-128px128px.png" /><br/>
+            <h4 class="" style="margin-left:20px;">
                 <?php _e("Loading Support Panel...")?><br/>
                 <img  alt="" src="<?php echo plugins_url() . "/".$plugin_name;?>/ofeatures-wp-core/img/preloader.gif" />
             </h4>
@@ -72,9 +74,33 @@ if (!function_exists('support_panel_ofeatures_html_page')){
             </style>
             
 <?php    } else { ?>
-            <h4 class="support-panl-preloader">
-                <?php echo (_e("Please provide the correct plugin access data in: Menu > ") . _e("Settings") . " > $settings_label"); ?><br/>
-            </h4>
+            <br/><br/>
+            <script>
+                window.ofeatures_config_counter = <?php echo increase_and_get_config_counter() ?>
+            </script>
+            <img alt="" style="opacity:1!important" src="<?php echo plugins_url() . "/".$plugin_name;?>/ofeatures-wp-core/img/ofeatures-logo-128px128px.png" /><br/>
+            <h2>
+                <?php echo (_e("Please provide the correct plugin access data in: ") . "<a href='options-general.php?page=ofeatures-customer-service'>Settings &gt; $settings_label</a>") ?><br/>
+                
+            </h2>
+            <h3 style="display:none" class="show-video" onclick="window.showYT()">
+                Video guide about this plugin. <i class="fa fa-youtube-play"></i>
+            </h3>
+            <h3 style="margin-bottom:0px; margin-top:30px;display:none" class="video-title">
+                 How to use this plugin - video guide.
+            </h3>
+            <div class="video-box" id="video-box-id" ></div> <br/>
+            <div onclick="window.maximizeVideo()" style="vertical-align: 10px; display:none" class="maximize-button button button-primary">Maximize this video <i class="fa fa-expand"></i></div>
+             <h3>
+                <br/>
+                <br/>
+                                
+                <?php echo (_e("You can contact us at any time to get support, leave feedback, request feature or functionality:")) ?><br/><br/>
+                - <?php echo (_e("Via Skype")) ?>: <a href="skype:ofeatures.support?add">ofeatures.support</a><br/>
+                - <?php echo (_e("On our website")) ?>: <a target="_blank" href="http://ofeatures.com">ofeatures.com</a>
+                
+            </h3>            
+          
 
 <?php   }
     }

@@ -1,4 +1,4 @@
-/*COPYRIGHT © SkyBlow Company VATIN: PL5170154130 www.it.skyblow.com, www.ofeatures.com*/
+/*COPYRIGHT ï¿½ SkyBlow Company VATIN: PL5170154130 www.it.skyblow.com, www.ofeatures.com*/
 
 /*Plugin Configuration*/
 .feature-block {
@@ -39,7 +39,7 @@
 
 .ok-status i{
     font-size: 18px; 
-    color: #84e842
+    color: #54e832
 }
 
 .preloader img{
@@ -60,12 +60,38 @@
 }
 
 .ofeatures-form{
-    padding-top: 15px;
+    padding-top: 5px;
     padding-left: 10px;
 }
 
 .ofeatures-config-title{
     line-height: 1.2em;
+}
+
+.details-request{
+    background-color:#fff;
+    color:#FF7F01;
+    padding:10px;
+    border-radius:8px;
+    font-weight:bold;   
+    margin-right: 20px;    
+}
+
+.no-account-question{
+   font-size:14px!important;
+}
+
+.no-account-question a{
+    color:#FF6C01;
+    font-size:16px!important;
+}
+
+.no-account-question a:focus{
+    box-shadow:none;
+}
+
+.no-account-question a:hover{
+    color:#444;
 }
 
 .show-other-languages-button{
@@ -77,6 +103,44 @@
 .show-other-languages-button:hover{
     color:#222;
 }
+
+#video{
+    left:-3px;
+}
+
+.video-box {
+    z-index:20;
+    overflow: hidden!important;
+    -webkit-box-shadow: inset 0px 0px 0px 5px rgba(255,255,255,1);
+    -moz-box-shadow: inset 0px 0px 0px 5px rgba(255,255,255,1);
+    box-shadow: inset 0px 0px 0px 5px rgba(255,255,255,1);
+    display:block;
+    border-radius:10px;
+    border:3px solid #fff;
+    display:none;
+    margin-top:10px;
+}
+
+ .video-youtube{
+     font-weight: bold;
+     color:#DC2725;
+ }
+
+ .maximize-button{
+       vertical-align: 10px !important;
+ }
+ 
+ .show-video{
+    color: #ff7f01;
+    cursor: pointer;
+    font-size: 13px;
+    margin-bottom: 15px !important;
+ }
+ 
+ .show-video:hover{
+     color:#ff4f01;
+ }
+
 
 /*Support Panel*/
 #ofeatures-frame{
@@ -100,5 +164,24 @@
 
 .support-panl-preloader img{
     opacity:0.5;
+}
+
+.excluded-page-box{
+    border-radius:7px;
+    background-color:#ff7f01;
+    border:3px solid #fff;
+    padding:5px;
+    color:#fff;
+    margin-right:7px;
+    margin-bottom:7px;
+}
+
+.excluded-page-box i{
+    color:#fff;
+    cursor:pointer;
+}
+
+.excluded-page-box i:hover{
+    color:#e00;
 }
 

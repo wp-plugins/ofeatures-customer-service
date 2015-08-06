@@ -1,4 +1,4 @@
-//COPYRIGHT © SkyBlow Company VATIN: PL5170154130 www.it.skyblow.com, www.ofeatures.com
+//COPYRIGHT Â© SkyBlow Company VATIN: PL5170154130 www.it.skyblow.com, www.ofeatures.com
 
 function scrollToEveryPage() {
     jQuery('.every-place-block').fadeIn()
@@ -55,17 +55,22 @@ function synchronize(ofeatures_configuration_no_features_info, currentDomain, pl
         action: "synchronize_ofeatures",
         plugintype: pluginType
     }, function(data) {
+    
+        var syncAgainInfo = '<br/><br/><button class="button button-default" type="submit">Try again <i class="fa fa-refresh"></i></button>' 
+    
         if (data == "no-access-rights") {
             jQuery('.preloader img').fadeOut()
-            jQuery('.preloader .text').text("Cannot synchronize. Please provide the correct plugin access data.")
+            jQuery('.preloader .text').html("Cannot synchronize. Please provide the correct plugin access data." + syncAgainInfo)
             return
         }
         if (data == "no-features-found") {
             jQuery('.preloader img').fadeOut()
             var noFeaturesInfo = ofeatures_configuration_no_features_info.replace("[DOMAIN]", currentDomain)
-            jQuery('.preloader .text').html("<span>" + noFeaturesInfo + "</span>")
+            jQuery('.preloader .text').html("<span>" + noFeaturesInfo + "</span>" + syncAgainInfo)
             return
         }
+        
+        
         jQuery('.preloader').fadeOut()
         jQuery('.ok-status').fadeIn()
         jQuery('.features').append(data)
@@ -83,5 +88,82 @@ function showLanguages(button, languageIndex, featureId){
     var selector = " .feature-index-" + featureId;
     jQuery(selector).fadeIn()
     jQuery(button).fadeOut()
-    
 }
+
+function remove_excluded(id){
+    jQuery("[excludedid='" + id + "']").remove()
+    var val = jQuery(".excluded-page-ids").val()
+    val = val.replace(id, '').replace(' ', '').replace(',,',',').replace(/^,/ ,'').replace(/,$/ ,'')
+    jQuery(".excluded-page-ids").val(val)
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var ytpath = 'yekJaYSxlz8'
+    var ytratio = 9/16;
+
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.ENDED) {
+        event.target.playVideo();
+      }
+    }
+    
+    function onPlayerReady (event) {
+        event.target.seekTo(0)
+        event.target.setPlaybackQuality('hd720')
+        event.target.playVideo();
+        event.target.setPlaybackQuality('hd720')
+        event.target.setLoop(true)
+        jQuery('.video-box').width('500')
+        jQuery('.video-box').fadeIn()
+    }
+
+    function showYT(){
+    
+        window.player = new YT.Player('video-box-id', {
+          height: '220',
+          videoId: ytpath,
+          playerVars: { 'autoplay': 1
+            , modestbranding:1  
+            ,theme:'light', 'showinfo': 0, 'controls': 1 },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+        jQuery('.video-title').show()
+        jQuery('.show-video').hide()
+        setTimeout(function(){
+            jQuery('#youtube-video').width('500')
+            jQuery('#youtube-video').show()
+            
+          
+        },100)
+        setTimeout(function(){
+            jQuery('.maximize-button').fadeIn()
+        },4500)
+    }
+    
+    window.showYT = showYT
+
+    setInterval(function(){
+        var w = jQuery('.video-box').width()
+        var h = w * ytratio;
+        jQuery('.video-box').height(h)
+    }, 500) 
+
+    setTimeout(function(){
+        if (window.ofeatures_config_counter < 5){
+            if (jQuery('.video-box').length > 0){
+                showYT()
+            }
+        }else{
+            jQuery('.show-video').show()
+        }
+    }, 500)
+    
+    window.maximizeVideo = function(){
+        jQuery('.video-box').width('90%')
+        jQuery('.maximize-button').hide()
+    }
+    
+});

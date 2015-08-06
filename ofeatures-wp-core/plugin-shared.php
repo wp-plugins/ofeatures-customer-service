@@ -1,23 +1,26 @@
 <?php
-//COPYRIGHT © SkyBlow Company VATIN: PL5170154130 www.it.skyblow.com, www.ofeatures.com
+//COPYRIGHT Â© SkyBlow Company VATIN: PL5170154130 www.it.skyblow.com, www.ofeatures.com
 
 if (!function_exists('get_ofeatures_plugins_remained')) {
     
     //Scripts and styles
     function add_ofeatures_scripts() {
         global $plugin_name;
-        wp_enqueue_script('ofeatures-wp', plugins_url() . "/$plugin_name/ofeatures-wp-core/js/ofeatures-wp.js", array(), '1.0.0');
-        wp_enqueue_style('ofeatures-wp', plugins_url() . "/$plugin_name/ofeatures-wp-core/css/ofeatures-wp.css", array(), '1.0.0');
+        wp_enqueue_script('ofeatures-wp', plugins_url() . "/$plugin_name/ofeatures-wp-core/js/ofeatures-wp.js", array(), '1.4.0');
+        wp_enqueue_script('you-tube', "https://www.youtube.com/iframe_api", array(), '1.0.0');
+        wp_enqueue_style('ofeatures-wp', plugins_url() . "/$plugin_name/ofeatures-wp-core/css/ofeatures-wp.css", array(), '1.4.0');
         wp_enqueue_style('font-awesome', 'https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css', array(), '4.0.3');
     }
 
     add_action('admin_enqueue_scripts', 'add_ofeatures_scripts');
     
     function delete_ofeatures_options() {
+        delete_option('ofeatures_configcounter');
         delete_option('ofeatures_features');
         delete_option('ofeatures_clientid');
         delete_option('ofeatures_wptoken');
         delete_option('ofeatures_footer');
+        delete_option('ofeatures_footer_excludedpages');
     }
 
     function add_ofeatures_options() {
@@ -25,6 +28,9 @@ if (!function_exists('get_ofeatures_plugins_remained')) {
         add_option("ofeatures_clientid", '', '', 'yes');
         add_option("ofeatures_wptoken", '', '', 'yes');
         add_option("ofeatures_footer", '', '', 'yes');
+        add_option("ofeatures_configcounter", 0, '', 'yes');
+        //Comma separated indices
+        add_option("ofeatures_footer_excludedpages", '', '', 'yes');   
     }
 
     //Support panel
@@ -46,7 +52,15 @@ if (!function_exists('get_ofeatures_plugins_remained')) {
     if (!empty($ofeatures_footer)) {
 
         function ofeatures_footer() {
-            echo do_shortcode(get_option('ofeatures_footer'));
+            $excuded_page_ids = get_option('ofeatures_footer_excludedpages', '');
+            $excuded_page_ids = explode(',', $excuded_page_ids);
+            $excuded_page_ids = array_filter($excuded_page_ids);
+            
+            global $post;
+            $current_page_id = $post->ID;
+            
+            if (!in_array($current_page_id, $excuded_page_ids))
+                echo do_shortcode(get_option('ofeatures_footer'));
         }
 
         add_action('wp_footer', 'ofeatures_footer');
@@ -69,6 +83,17 @@ if (!function_exists('get_ofeatures_plugins_remained')) {
     function get_current_domain_no_protocol() {
         return str_replace('www.', '', $_SERVER['SERVER_NAME']);
     }
+    
+    function increase_and_get_config_counter(){
+        $config_counter = get_option('ofeatures_configcounter');
+        if (empty($config_counter)){
+            $config_counter = 0;
+        }
+        
+        $config_counter = $config_counter + 1;
+        update_option('ofeatures_configcounter', $config_counter);
+        return $config_counter;
+    }
 
     //Ajax synchronize action
     function synchronize_ofeatures() {
@@ -78,11 +103,23 @@ if (!function_exists('get_ofeatures_plugins_remained')) {
             //$plugintype = $_POST["plugintype"];
             $wpToken = get_option('ofeatures_wptoken');
             $ofeatures_features = get_option('ofeatures_features');
-            $response = @file_get_contents($baseUrl . '/skyblow.clientbackend/pluginaccess/features?plugintechnology=wp'
+            $url = $baseUrl . '/skyblow.clientbackend/pluginaccess/features?plugintechnology=wp'
                 . '&websiteaddress='
                 . get_current_domain_no_protocol()
                 . '&wpToken='
-                . $wpToken);
+                . $wpToken;
+                
+            $response = @file_get_contents($url);
+               
+            if ($response === false && extension_loaded('curl') === true){
+                $ch = curl_init();
+                $timeout = 5;
+                curl_setopt($ch, CURLOPT_URL, $url);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+                $response = curl_exec($ch);
+                curl_close($ch);
+            }
 
             if ($response != "no-access-rights" && $response !== false) {
                 $result = json_decode($response, true);
