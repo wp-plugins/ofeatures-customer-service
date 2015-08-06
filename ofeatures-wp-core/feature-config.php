@@ -56,7 +56,7 @@ if (!function_exists('ofeatures_config_page')){
                        value="<?php echo get_option('ofeatures_clientid'); ?>" /></td>
                     </tr>
                     <tr>
-                        <td><?php _e("Wordpress token")?></td>
+                        <td><?php _e("WordPress token")?></td>
                         <td><input placeholder='<?php _e("wordpress token")?>' name="ofeatures_wptoken" type="password" id="ofeatures_wptoken"
                        value="<?php echo get_option('ofeatures_wptoken'); ?>" />
                         </td>

@@ -55,17 +55,22 @@ function synchronize(ofeatures_configuration_no_features_info, currentDomain, pl
         action: "synchronize_ofeatures",
         plugintype: pluginType
     }, function(data) {
+    
+        var syncAgainInfo = '<br/><br/><button class="button button-default" type="submit">Try again <i class="fa fa-refresh"></i></button>' 
+    
         if (data == "no-access-rights") {
             jQuery('.preloader img').fadeOut()
-            jQuery('.preloader .text').text("Cannot synchronize. Please provide the correct plugin access data.")
+            jQuery('.preloader .text').html("Cannot synchronize. Please provide the correct plugin access data." + syncAgainInfo)
             return
         }
         if (data == "no-features-found") {
             jQuery('.preloader img').fadeOut()
             var noFeaturesInfo = ofeatures_configuration_no_features_info.replace("[DOMAIN]", currentDomain)
-            jQuery('.preloader .text').html("<span>" + noFeaturesInfo + "</span>")
+            jQuery('.preloader .text').html("<span>" + noFeaturesInfo + "</span>" + syncAgainInfo)
             return
         }
+        
+        
         jQuery('.preloader').fadeOut()
         jQuery('.ok-status').fadeIn()
         jQuery('.features').append(data)
@@ -93,7 +98,7 @@ function remove_excluded(id){
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    var ytpath = '8uGVVhcfioM'
+    var ytpath = 'yekJaYSxlz8'
     var ytratio = 9/16;
 
     function onPlayerStateChange(event) {
@@ -103,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function onPlayerReady (event) {
-        event.target.seekTo(39)
+        event.target.seekTo(0)
         event.target.setPlaybackQuality('hd720')
         event.target.playVideo();
         event.target.setPlaybackQuality('hd720')
